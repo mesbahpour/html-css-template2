@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./plugins/aos-master/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./plugins/bootstrap-4.5.0-dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="d-flex justify-content-between mb-3">
+        <div class="p-2 mt-4">
+          <i class="fa fa-bars mobile" id="mobile" onclick="openNav()"></i>
+          <span class="menu">
+            <a href="/html/">HOMEPAGE</a>
+            <a href="/css/">ABOUTE</a>
+            <a href="/js/">PRODUCT</a>
+            <a href="/jquery/">PAGES</a>
+          </span>
+        </div>
+        <div class="p-2">
+          <img
+            src="./images/logo-light.png"
+            class="img-fluid"
+            alt=""
+            style="max-width: 120px;"
+          />
+        </div>
+        <div class="p-2 mt-4">
+          <span class="menu">
+            <a href="/html/">GALLERY</a>
+            <a href="/css/">BLOGS</a>
+            <a href="/js/">CONTACT</a>
+          </span>
+          <span>
+            <i class="fa fa-search"></i>
+            <i class="fa notification fa-shopping-basket">
+              <span class="badge">0</span>
+            </i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile-nav -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <!-- /mobile-nav -->
+
+    <!-- slider -->
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img
+          src="./images/slider-5_569b9362-caa3-4772-a204-82017d155969.png"
+          style="width: 100%;"
+        />
+      </div>
+      <div class="mySlides">
+        <img
+          src="./images/slider-6_ea5a07b1-22bd-40f0-9efa-fe36bc9e7840.png"
+          style="width: 100%;"
+        />
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <!-- /slider -->
+
+    <div class="text-center container">
+      <div class="button">ADD TO CART</div>
+      <br />
+      <h1 class="m-3">Delicieux</h1>
+      <p>WELCOME TO THE STORE</p>
+      <img
+        src="./images/floral_grande.png"
+        alt=""
+        class="img-fluid"
+        style="width: 100px;"
+      />
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="./images/award-2_grande.png" alt="" />
+          <h5 class="mt-3">BAKERY OF THE MONTH</h5>
+          <p>2017 - 2018</p>
+          <p>
+            Tart bear claw cake tiramisu chocolate bar gummies dragée lemon
+            drops brownie. Jujubes chocolate cake sesame snaps
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <img src="./images/award-1_grande.png" alt="" />
+          <h5 class="mt-3">BAKERY OF THE MONTH</h5>
+          <p>2017 - 2018</p>
+          <p>
+            Tart bear claw cake tiramisu chocolate bar gummies dragée lemon
+            drops brownie. Jujubes chocolate cake sesame snaps
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <img src="./images/award-2_grande.png" alt="" />
+          <h5 class="mt-3">BAKERY OF THE MONTH</h5>
+          <p>2017 - 2018</p>
+          <p>
+            Tart bear claw cake tiramisu chocolate bar gummies dragée lemon
+            drops brownie. Jujubes chocolate cake sesame snaps
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="./images/signature_grande.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-sm-6">
+          <h5 class="mt-5 pt-5">
+            “It seems that every country that can get its hands on butter has
+            its opinion of what butter cream frosting should be. Some are made
+            with eggs and butter.”
+          </h5>
+          <p>Sunshine - CEO Bakery</p>
+          <img src="./images/signature-2_grande.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center p-5 section">
+      <h1 class="p-5 mt-3">Deal of the day</h1>
+      <p>BREADS EVERY DAY</p>
+      <img
+        src="./images/floral_grande.png"
+        alt=""
+        class="img-fluid"
+        style="width: 100px;"
+      />
+    </div>
+
+    <footer class="container-fluid text-center text-white">
+      <div class="row">
+        <div class="col-sm-4 p-5">
+          <img
+            src="./images/logo-dark.png"
+            alt=""
+            style="width: 200px;"
+            class="img-fluid"
+          />
+          <p class="p-3">
+            Tart bear claw cake tiramisu chocolate bar gummies dragée lemon
+            drops brownie.
+          </p>
+        </div>
+        <div class="col-sm-4 p-5">
+          <h3 class="mb-3">Get news & offer</h3>
+
+          <input type="text" placeholder="Your Email Address" /><input type="submit" value="subscribe"/>
+          <p class="text-muted mt-3">* Don't worry, we never spam</p>
+
+          <h4>Contact with me</h4>
+          <p class="text-muted">
+            PO Box 16122 Collins Street West,Victoria 8007 Australia
+          </p>
+          <p class="text-muted">
+            (+84 ) 7534 9773, (+84 ) 874 548
+          </p>
+        </div>
+        <div class="col-sm-4 p-5">
+          <h3>Time to Open</h3>
+          <p class="text-muted m-4">
+            Monday - Friday: <br />08:00 am - 08:30 pm <br />Saturday -
+            Sunday:<br />10:00 am - 16:30 pm
+          </p>
+          <img src="./images/master-card.png" alt="" />
+          <img src="./images/paypal.png" alt="" />
+          <img src="./images/visa.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <div class="bg-dark text-center text-white p-3">
+      © Copyright by Bready Store. Design by Alena Studio.
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="./plugins/aos-master/dist/aos.js"></script>
+    <script src="./plugins/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+@import "varibles";
+
+@import "reset";
+
+body {
+  font-family: "Lora", serif;
+}
+
+.fa {
+  font-size: $faIcon !important;
+  cursor: pointer;
+  &:hover {
+    color: $gold;
+  }
+}
+
+.menu  a {
+  color: $black;
+  &:hover {
+    text-decoration: none;
+    color: $gold !important;
+  }
+  margin-right: 30px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $gold;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.turn {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;  
+
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  &:hover{
+    color: #fff;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menu {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .mobile {
+    display: none !important;
+  }
+}
+
+.notification {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.notification .badge {
+  position: absolute;
+  top: 22px;
+  right: -2px;
+  border-radius: 50%;
+  background-color: $gold;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 10px;
+  padding: 3px 6px;
+}
+
+.fa-angle-right,
+.fa-angle-left {
+  top: 50% !important;
+  position: absolute;
+  right: 50%;
+  font-size: $faIcon + 30 !important;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Fading animation */
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+.badge-sale {
+  position: relative;
+}
+.badge-sale i {
+  position: absolute;
+  left: 20%;
+  top: -10px;
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+}
+
+.button {
+  border: 2px solid $gold;
+  color: $gold;
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: $gold;
+    transition: all 0.3s;
+  }
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+}
+
+.section {
+  background: url("../images/home-product.png");
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+background-position:center;
+background-attachment: fixed;
+}
+
+.post {
+  cursor: pointer;
+  width: 200px;
+  transition: all 0.3s;
+  &:hover {
+    transition: all 0.3s;
+    content: url("../images/1.png");
+  }
+}
+
+footer {
+  background-color: $footer;
+}
+
+input[type=submit] {
+  border: 2px solid $gold;
+  text-align: center !important;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background:$gold;
+  color: white;
+  padding:10px;
+}
+
+input[type=text] {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding:10px;
+  border: 2px solid $gray;
+  background-color: $footer;
+  &:focus{
+    outline: none;
+  }
+}
